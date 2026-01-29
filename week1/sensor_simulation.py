@@ -12,15 +12,15 @@ def get_soil_moisture():
 
 def main():
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
     temp = get_temperature()
     hum = get_humidity()
     soil = get_soil_moisture()
 
     print(f"Time: {now}")
     print(f"Temperature: {temp} °C")
-    print(f"Humidity: %{hum}")
-    print(f"Soil moisture: %{soil}")
+    print(f"Humidity: {hum} %")
+    print(f"Soil moisture: {soil} %")
 
 if __name__ == "__main__":
     main()
-
